@@ -1,0 +1,68 @@
+///*------------------------------------*\
+//    #BOX
+//\*------------------------------------*/
+
+// The box object simply boxes off content.
+
+// Predefine the variables below in order to alter and enable specific features.
+$tree-box-padding:         $tree-base-spacing-unit !default;
+$tree-box-padding--tiny:   quarter($tree-box-padding) !default;
+$tree-box-padding--small:  halve($tree-box-padding) !default;
+$tree-box-padding--large:  double($tree-box-padding) !default;
+
+$tree-enable-box--small:   false !default;
+$tree-enable-box--large:   false !default;
+
+
+
+
+
+// 1. So we can apply the `.box` class to naturally-inline elements.
+.#{$tree-namespace}box,
+%#{$tree-namespace}box {
+    @extend %clearfix;
+    display: block; // [1]
+    padding: $tree-box-padding;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
+
+@if ($tree-enable-box--tiny == true) {
+
+    // Tiny box.
+
+    .#{$tree-namespace}box--tiny,
+    %#{$tree-namespace}box--tiny {
+        padding: $tree-box-padding--tiny;
+    }
+
+}
+
+@if ($tree-enable-box--small == true) {
+
+    // Small box.
+
+    .#{$tree-namespace}box--small,
+    %#{$tree-namespace}box--small {
+        padding: $tree-box-padding--small;
+    }
+
+}
+
+@if ($tree-enable-box--large == true) {
+
+    // Large box.
+
+    .#{$tree-namespace}box--large,
+    %#{$tree-namespace}box--large {
+        padding: $tree-box-padding--large;
+    }
+
+}
