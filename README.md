@@ -1,5 +1,7 @@
 # The box object
 
-The `box` object is clone of [inuitcss] (https://github.com/inuitcss) - [objects.box] (https://github.com/inuitcss/objects.box) <q>simply boxes off content</q>.
+The `box` object is simply boxes off content.
 
-It is develop and maintained by [Harry Roberts] (https://twitter.com/csswizardry).
+## Credits
+
+* **[inuitcss](https://twitter.com/inuitcss)** Powerful, scalable, Sass-based, BEM, OOCSS framework.

@@ -1,18 +1,21 @@
-///*------------------------------------*\
-//    #BOX
-//\*------------------------------------*/
+// *************************************
+//
+//   #BOX
+//
+// *************************************
 
 // The box object simply boxes off content.
 
 // Predefine the variables below in order to alter and enable specific features.
-$tree-box-padding:         $tree-base-spacing-unit !default;
-$tree-box-padding--tiny:   quarter($tree-box-padding) !default;
-$tree-box-padding--small:  halve($tree-box-padding) !default;
-$tree-box-padding--large:  double($tree-box-padding) !default;
+$tree-box-padding:           $tree-base-spacing-unit !default;
+$tree-box-padding--tiny:     quarter($tree-box-padding) !default;
+$tree-box-padding--small:    halve($tree-box-padding) !default;
+$tree-box-padding--large:    double($tree-box-padding) !default;
 
-$tree-enable-box--tiny:    false !default;
-$tree-enable-box--small:   false !default;
-$tree-enable-box--large:   false !default;
+$tree-enable-box--flush:     false !default
+$tree-enable-box--tiny:      false !default;
+$tree-enable-box--small:     false !default;
+$tree-enable-box--large:     false !default;
 
 
 
@@ -34,6 +37,17 @@ $tree-enable-box--large:   false !default;
 
 
 
+
+@if ($tree-enable-box--flush == true) {
+
+    // Flush (i.e. no padding) box.
+
+    .#{$tree-namespace}box--flush,
+    %#{$tree-namespace}box--flush {
+        padding: 0;
+    }
+
+}
 
 @if ($tree-enable-box--tiny == true) {
 
