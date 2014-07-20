@@ -7,6 +7,8 @@
 // The box object simply boxes off content.
 
 // Predefine the variables below in order to alter and enable specific features.
+$tree-box-namespace:         $tree-namespace !default;
+
 $tree-box-padding:           $tree-base-spacing-unit !default;
 $tree-box-padding--tiny:     quarter($tree-box-padding) !default;
 $tree-box-padding--small:    halve($tree-box-padding) !default;
@@ -22,8 +24,8 @@ $tree-enable-box--large:     false !default;
 
 
 // 1. So we can apply the `.box` class to naturally-inline elements.
-.#{$tree-namespace}box,
-%#{$tree-namespace}box {
+.#{$tree-box-namespace}box,
+%#{$tree-box-namespace}box {
     @extend %clearfix;
     display: block; // [1]
     padding: $tree-box-padding;
@@ -42,8 +44,8 @@ $tree-enable-box--large:     false !default;
 
     // Flush (i.e. no padding) box.
 
-    .#{$tree-namespace}box--flush,
-    %#{$tree-namespace}box--flush {
+    .#{$tree-box-namespace}box--flush,
+    %#{$tree-box-namespace}box--flush {
         padding: 0;
     }
 
@@ -53,8 +55,8 @@ $tree-enable-box--large:     false !default;
 
     // Tiny box.
 
-    .#{$tree-namespace}box--tiny,
-    %#{$tree-namespace}box--tiny {
+    .#{$tree-box-namespace}box--tiny,
+    %#{$tree-box-namespace}box--tiny {
         padding: $tree-box-padding--tiny;
     }
 
@@ -64,8 +66,8 @@ $tree-enable-box--large:     false !default;
 
     // Small box.
 
-    .#{$tree-namespace}box--small,
-    %#{$tree-namespace}box--small {
+    .#{$tree-box-namespace}box--small,
+    %#{$tree-box-namespace}box--small {
         padding: $tree-box-padding--small;
     }
 
@@ -75,8 +77,8 @@ $tree-enable-box--large:     false !default;
 
     // Large box.
 
-    .#{$tree-namespace}box--large,
-    %#{$tree-namespace}box--large {
+    .#{$tree-box-namespace}box--large,
+    %#{$tree-box-namespace}box--large {
         padding: $tree-box-padding--large;
     }
 
