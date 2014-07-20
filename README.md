@@ -2,6 +2,11 @@
 
 The `box` object is simply boxes off content.
 
+Install using Bower:
+
+    $ bower install --save tree-box
+
 ## Credits
 
-* **[inuitcss](https://twitter.com/inuitcss)** Powerful, scalable, Sass-based, BEM, OOCSS framework.
+* **[inuitcss](https://github.com/inuitcss)** Powerful, Sass-based, OOCSS
+framework designed with scalability and performance in mind.
