@@ -10,14 +10,16 @@
 $tree-box-namespace:         $tree-namespace !default;
 
 $tree-box-padding:           $tree-base-spacing-unit !default;
-$tree-box-padding--tiny:     quarter($tree-box-padding) !default;
-$tree-box-padding--small:    halve($tree-box-padding) !default;
-$tree-box-padding--large:    double($tree-box-padding) !default;
+$tree-box-padding--tiny:       quarter($tree-box-padding) !default;
+$tree-box-padding--small:        halve($tree-box-padding) !default;
+$tree-box-padding--large:       double($tree-box-padding) !default;
+$tree-box-padding--huge:     quadruple($tree-box-padding) !default;
 
 $tree-enable-box--flush:     false !default;
 $tree-enable-box--tiny:      false !default;
 $tree-enable-box--small:     false !default;
 $tree-enable-box--large:     false !default;
+$tree-enable-box--huge:      false !default;
 
 
 
@@ -80,6 +82,17 @@ $tree-enable-box--large:     false !default;
     .#{$tree-box-namespace}box--large,
     %#{$tree-box-namespace}box--large {
         padding: $tree-box-padding--large;
+    }
+
+}
+
+@if ($tree-enable-box--huge == true) {
+
+    // Huge box.
+
+    .#{$tree-box-namespace}box--huge,
+    %#{$tree-box-namespace}box--huge {
+        padding: $tree-box-padding--huge;
     }
 
 }
