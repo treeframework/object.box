@@ -45,7 +45,7 @@ Once installed, `@import` into your project in its Objects layer:
 
 ### Install via file download
 
-THe least recommended option for installation is to simply download
+The least recommended option for installation is to simply download
 `_object.box.scss` into your project and `@import` it into your project in its
 Objects layer.
 
