@@ -17,18 +17,24 @@ dependencies in the  relevant way.
 ## Installation
 
 The recommended installation method is Bower, but you can install the Box module
-via a Git Submodule, or copy and paste.
+via npm,  Git Submodule, or copy and paste.
 
 ### Install using Bower:
 
 ```sh
-$ bower install --save tree-box
+$ bower install tree-box --save
 ```
 
 Once installed, `@import` into your project in its Object layer:
 
 ```scss
 @import "bower_componenets/tree-box/object.box";
+```
+
+### Install using npm:
+
+```sh
+$ npm install tree-box --save
 ```
 
 ### Install as a Git Submodule:
