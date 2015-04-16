@@ -1,12 +1,33 @@
-// *************************************
+// =============================================================================
 //
-//   #BOX
+// Name:          Box
 //
-// *************************************
+// Description:   Boxes off content.
+//
+// Block:         `o-box`
+//
+// Modifiers:     `o-box--tiny`
+//                `o-box--small`
+//                `o-box--large`
+//                `o-box--huge`
+//
+// Markup:
+//
+// <div class="o-box">...</div>
+//
+// <div class="o-box  o-box--large">...</div>
+//
+// =============================================================================
 
-// The box object simply boxes off content.
+
+
+
+
+// Variables
+// =============================================================================
 
 // Predefine the variables below in order to alter and enable specific features.
+
 $tree-box-namespace:         $tree-namespace !default;
 
 $tree-box-padding:           $tree-base-spacing-unit !default;
@@ -25,9 +46,13 @@ $tree-enable-box--huge:      false !default;
 
 
 
+// =============================================================================
+// Block: `o-box`
+// =============================================================================
+
 // 1. So we can apply the `.box` class to naturally-inline elements.
-.#{$tree-box-namespace}box,
-%#{$tree-box-namespace}box {
+.#{$tree-box-namespace}o-box,
+%#{$tree-box-namespace}o-box {
     @extend %clearfix;
     display: block; // [1]
     padding: $tree-box-padding;
@@ -42,56 +67,61 @@ $tree-enable-box--huge:      false !default;
 
 
 
+// Modifier: `o-box--flush`
+// =============================================================================
+
 @if ($tree-enable-box--flush == true) {
 
-    // Flush (i.e. no padding) box.
-
-    .#{$tree-box-namespace}box--flush,
-    %#{$tree-box-namespace}box--flush {
+    .#{$tree-box-namespace}o-box--flush,
+    %#{$tree-box-namespace}o-box--flush {
         padding: 0;
     }
 
 }
 
+// Modifier: `o-box--tiny`
+// =============================================================================
+
 @if ($tree-enable-box--tiny == true) {
 
-    // Tiny box.
-
-    .#{$tree-box-namespace}box--tiny,
-    %#{$tree-box-namespace}box--tiny {
+    .#{$tree-box-namespace}o-box--tiny,
+    %#{$tree-box-namespace}o-box--tiny {
         padding: $tree-box-padding--tiny;
     }
 
 }
 
+// Modifier: `o-box--small`
+// =============================================================================
+
 @if ($tree-enable-box--small == true) {
 
-    // Small box.
-
-    .#{$tree-box-namespace}box--small,
-    %#{$tree-box-namespace}box--small {
+    .#{$tree-box-namespace}o-box--small,
+    %#{$tree-box-namespace}o-box--small {
         padding: $tree-box-padding--small;
     }
 
 }
 
+// Modifier: `o-box--large`
+// =============================================================================
+
 @if ($tree-enable-box--large == true) {
 
-    // Large box.
-
-    .#{$tree-box-namespace}box--large,
-    %#{$tree-box-namespace}box--large {
+    .#{$tree-box-namespace}o-box--large,
+    %#{$tree-box-namespace}o-box--large {
         padding: $tree-box-padding--large;
     }
 
 }
 
+// Modifier: `o-box--huge`
+// =============================================================================
+
 @if ($tree-enable-box--huge == true) {
 
-    // Huge box.
-
-    .#{$tree-box-namespace}box--huge,
-    %#{$tree-box-namespace}box--huge {
+    .#{$tree-box-namespace}o-box--huge,
+    %#{$tree-box-namespace}o-box--huge {
         padding: $tree-box-padding--huge;
     }
 
