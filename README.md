@@ -60,7 +60,7 @@ Objects layer.
 Basic usage of the Box object uses the required classes:
 
 ```html
-<div class="box">
+<div class="o-box">
     Foo Bar Baz
 </div>
 ```
@@ -69,13 +69,13 @@ Basic usage of the Box object uses the required classes:
 
 Other, optional classes can supplement the required base classes:
 
-* `.box--flush`: remove all padding from boxes.
-* `.box--[tiny|small|large|huge]`: alter the padding on boxes.
+* `.o-box--flush`: remove all padding from boxes.
+* `.o-box--[tiny|small|large|huge]`: alter the padding on boxes.
 
 For example:
 
 ```html
-<div class="box  box--large">
+<div class="o-box  o-box--large">
     Foo Bar Baz
 </div>
 ```
