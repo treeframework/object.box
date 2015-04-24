@@ -10,14 +10,13 @@ The Box object depends on three other modules:
 * [tools.functions](https://github.com/treeframework/tools.functions)
 * [trump.clearfix](https://github.com/treeframework/trump.clearfix)
 
-If you install the Box object using Bower, you will get these dependencies at
-the same time. If not using bower, please be sure to install and `@import` these
-dependencies in the  relevant way.
+If you install the `box` object using Bower or npm, you will get these 
+dependencies at the same time. If not using Bower or npm, please be sure to 
+install and `@import` these dependencies in the  relevant way.
 
 ## Installation
 
-The recommended installation method is Bower, but you can install the Box module
-via npm,  Git Submodule, or copy and paste.
+You can install the `box` module via Bower, npm, or copy and paste.
 
 ### Install using Bower:
 
@@ -37,18 +36,6 @@ Once installed, `@import` into your project in its Object layer:
 $ npm install tree-box --save
 ```
 
-### Install as a Git Submodule:
-
-```sh
-$ git submodule add git@github.com:treeframework/object.box.git
-```
-
-Once installed, `@import` into your project in its Objects layer:
-
-```scss
-@import "object.box/object.box";
-```
-
 ### Install via file download
 
 The least recommended option for installation is to simply download
@@ -60,9 +47,7 @@ Objects layer.
 Basic usage of the Box object uses the required classes:
 
 ```html
-<div class="o-box">
-    Foo Bar Baz
-</div>
+<div class="o-box">...</div>
 ```
 
 ## Options
@@ -75,9 +60,7 @@ Other, optional classes can supplement the required base classes:
 For example:
 
 ```html
-<div class="o-box  o-box--large">
-    Foo Bar Baz
-</div>
+<div class="o-box  o-box--large">...</div>
 ```
 
 ## Credits
