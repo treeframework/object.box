@@ -50,9 +50,9 @@ $tree-enable-box--huge:      false !default;
 // Block: `o-box`
 // =============================================================================
 
-// 1. So we can apply the `.box` class to naturally-inline elements.
-.#{$tree-box-namespace}o-box,
-%#{$tree-box-namespace}o-box {
+// 1. So we can apply the `.o-box` class to naturally-inline elements.
+
+.#{$tree-box-namespace}o-box {
     @extend %clearfix;
     display: block; // [1]
     padding: $tree-box-padding;
@@ -67,61 +67,56 @@ $tree-enable-box--huge:      false !default;
 
 
 
-// Modifier: `o-box--flush`
-// =============================================================================
-
 @if ($tree-enable-box--flush == true) {
 
-    .#{$tree-box-namespace}o-box--flush,
-    %#{$tree-box-namespace}o-box--flush {
+    // Modifier: `o-box--flush`
+    // =========================================================================
+
+    .#{$tree-box-namespace}o-box--flush {
         padding: 0;
     }
 
 }
 
-// Modifier: `o-box--tiny`
-// =============================================================================
-
 @if ($tree-enable-box--tiny == true) {
 
-    .#{$tree-box-namespace}o-box--tiny,
-    %#{$tree-box-namespace}o-box--tiny {
+    // Modifier: `o-box--tiny`
+    // =========================================================================
+
+    .#{$tree-box-namespace}o-box--tiny {
         padding: $tree-box-padding--tiny;
     }
 
 }
 
-// Modifier: `o-box--small`
-// =============================================================================
-
 @if ($tree-enable-box--small == true) {
 
-    .#{$tree-box-namespace}o-box--small,
-    %#{$tree-box-namespace}o-box--small {
+    // Modifier: `o-box--small`
+    // =========================================================================
+
+    .#{$tree-box-namespace}o-box--small {
         padding: $tree-box-padding--small;
     }
 
 }
 
-// Modifier: `o-box--large`
-// =============================================================================
-
 @if ($tree-enable-box--large == true) {
 
-    .#{$tree-box-namespace}o-box--large,
-    %#{$tree-box-namespace}o-box--large {
+    // Modifier: `o-box--large`
+    // =========================================================================
+
+    .#{$tree-box-namespace}o-box--large {
         padding: $tree-box-padding--large;
     }
 
 }
 
-// Modifier: `o-box--huge`
-// =============================================================================
-
 @if ($tree-enable-box--huge == true) {
 
-    .#{$tree-box-namespace}o-box--huge,
-    %#{$tree-box-namespace}o-box--huge {
+    // Modifier: `o-box--huge`
+    // =========================================================================
+
+    .#{$tree-box-namespace}o-box--huge {
         padding: $tree-box-padding--huge;
     }
 
