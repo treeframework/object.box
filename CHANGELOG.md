@@ -1,5 +1,9 @@
 # box Changelog
 
+## [0.4.0] - 2015-04-24
+
+* Deprecate placeholder selector.
+
 ## [0.3.0] - 2015-04-16
 
 * [BREAKING] Add object namespace `o-`.
