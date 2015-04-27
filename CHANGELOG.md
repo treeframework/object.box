@@ -2,7 +2,7 @@
 
 ## [0.4.1] - 2015-04-27
 
-* Bump `tree-clearfix` dependency.
+* Add clearfix utility namespace `u-`.
 
 ## [0.4.0] - 2015-04-24
 
