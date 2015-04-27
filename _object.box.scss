@@ -53,7 +53,7 @@ $tree-enable-box--huge:      false !default;
 // 1. So we can apply the `.o-box` class to naturally-inline elements.
 
 .#{$tree-box-namespace}o-box {
-    @extend %clearfix;
+    @extend %u-clearfix;
     display: block; // [1]
     padding: $tree-box-padding;
 
