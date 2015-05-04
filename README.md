@@ -27,7 +27,7 @@ $ bower install tree-box --save
 Once installed, `@import` into your project in its Object layer:
 
 ```scss
-@import "bower_componenets/tree-box/object.box";
+@import "bower_components/tree-box/object.box";
 ```
 
 ### Install using npm:
